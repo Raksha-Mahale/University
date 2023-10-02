@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="#"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-solid fa-bars"  onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Certificate & Online Programs For 2021</h1>
+    </section>
+
+    <!-- Blog page content -->
+    
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/certificate.jpg" alt="">
+                <h2>Our Certificate & Online Programs For 2021</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, vitae corrupti error saepe deserunt voluptates! Totam voluptas corrupti consequatur magnam suscipit! Nisi iusto ex earum fugit sed ipsa quae pariatur, corrupti quas facilis quo sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eius odit magni atque repellendus rem repudiandae quibusdam minus amet. Rem!</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, vitae corrupti error saepe deserunt voluptates! Totam voluptas corrupti consequatur magnam suscipit! Nisi iusto ex earum fugit sed ipsa quae pariatur, corrupti quas facilis quo sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eius odit magni atque repellendus rem repudiandae quibusdam minus amet. Rem! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, omnis esse, repudiandae sunt facilis tempora blanditiis odio excepturi neque nulla numquam dolor repellendus minima voluptatum nemo tempore quam illum nam.</p>
+                <br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum quod dolore excepturi autem. Aliquid autem facilis mollitia exercitationem aperiam accusamus. Quisquam similique, rem dolore voluptate omnis eaque ad quod neque nulla qui nihil deleniti molestias. Aliquam ad ut tenetur possimus delectus voluptate unde reprehenderit, commodi quaerat nemo culpa odit voluptates repudiandae provident ipsum! Illum exercitationem provident rem suscipit quis!</p>
+
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+
+                    <form action="blog.php" class="comment-form" method="Post">
+                        <input type="text" name="name" placeholder="Enter Name">
+                        <input type="email" name="email" placeholder="Enter Email">
+                        <textarea  rows="5" name="ccomment" placeholder="Your Comment"></textarea>
+                        <button type="submit" name="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                    <div>
+                        <span>Business Analyatics</span>
+                        <span>21</span>
+                    </div>
+                    <div>
+                        <span>Data Science</span>
+                        <span>28</span>
+                    </div>
+                    <div>
+                        <span>Machine Learning</span>
+                        <span>34</span>
+                    </div>
+                    <div>
+                        <span>autoCAD</span>
+                        <span>42</span>
+                    </div>
+                    <div>
+                        <span>Journalism</span>
+                        <span>22</span>
+                    </div>
+                    <div>
+                        <span>Commerce</span>
+                        <span>30</span>
+                    </div>
+                
+            </div>
+        </div>
+
+    </section>
+    
+     <!-- PHP Code Comment -->
+     <!-- <?php
+        include 'database.php';
+        if(isset($_POST['submit']))
+        {
+            $name=$_POST['name'];
+            $email=$_POST['email'];
+            $ccomment=$_POST['ccomment'];
+        }
+        $sql="insert into comment(name,email,ccomment) values('$name','$email','$ccomment')";
+        if(mysqli_query($con,$sql))
+        {
+            echo "<script> alert ('new record inserted')</script>";
+            // echo "<script> window.open('blog.php','_self')</script>";
+        }
+        else
+        {
+            echo "error:".mysqli_error($con);
+        }
+        mysqli_close($con);
+        ?> -->
+
+
+
+    <!-- Footer -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad sed amet molestiae nobis eius blanditiis veritatis, eos voluptatibus vel beatae <br>quisquam alias porro voluptates aperiam os voluptatibus vel beatae quisquam alias porro voluptates aperiam  natus.</p>
+        <div class="icon">
+            <i class="fa fa-brands fa-facebook"></i>
+            <i class="fa fa-brands fa-square-twitter"></i>
+            <i class="fa fa-brands fa-square-instagram"></i>
+            <i class="fa fa-brands fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa-regular fa-heart"></i> Raksha</p>
+    </section>
+
+    <!-- JAVASCRIPT for toggle menu -->
+    <script>
+        var navLinks=document.getElementById("navLinks")
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-100%";
+        }
+    </script>
+</body>
+</html>
